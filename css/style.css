@@ -1,240 +1,207 @@
-body {
-
-    text-align: center;
-    margin: 0;
-    height: 100%;
-}
-
-
-nav {
-    background-color: #A6B1E1;
-    border-bottom: solid medium #A4907C;
-    display: flex;
-    justify-content: right;
-}
-
-.linky a {
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
+h1 {
+    font-size: xx-large;
     font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    font-size: large;
-    color: #402218;
-    padding: 15px;
-
-}
-
-.linky a:hover {
-    color: #9288F8;
-}
-
-.boop {
-    position: relative;
-    background-color: #F8F0E5;
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 15px; 
-    /*padding: 200px 0 0 0;*/
-    /*margin: 0px;*/
-    display: flex;
-    flex-direction: column;
-    color: #424874;
-    
+    color: aliceblue;
+    letter-spacing: 2px;
     
 }
 
-.boop h1 {
-    margin-bottom: 0px;
-    color: #322653;
-}
-
-.robot {
-    position: absolute;
-    top: 10px; 
-    left: 150px;
-}
-
-.laptop {
-    position: absolute;
-    top: 5px; 
-    left: 1200px;
-}
-
-footer {
-    
-    background-color: #A6B1E1;
-    border-top: solid medium #A4907C;
-    padding: 150px;
-    display: flex;
-    justify-content: center;
-
-}
-
- a {
-    font-size: large;
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    color: #402218;
-    padding: 13px 15px;
-}
-
-footer a:hover {
-    color: #9288F8;
-}
-
-h1{
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
-    font-family: 'Work Sans', sans-serif;
-    font-size: 50px;
-    color:black;
-
+.boop h2.email {
+    letter-spacing: 1.5px;
 }
 
 .example {
-    /*padding: 50px 0 0 0;*/
-    align-items: center;
-    padding-bottom: 20px;
-    background-color: #F8F0E5
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 10px; 
+
+}
+
+.example .aboutMe {
+    text-align: left;
+    padding-left: 20%;
+    letter-spacing: 2px;
+    font-size: larger;
+}
+
+.paragraph {
+    margin-left: 75px;
+    font-size: large;
+}
+
+.example .headshot {
+    margin-right: 15%;
+    margin-left: 3%;
+    border-radius: 5%;
+    width: 20%;
+    transition: transform 0.3 ease;
+}
+
+.headshot:hover {
+    transform: translateY(-5px);
+}
+
+
+h2 {
+    font-family:  'Work Sans', sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: #435e46;
+    text-align: center;
+    margin: 0;
+}
+
+p {
+    font-family:  'Work Sans', sans-serif;
+    color: aliceblue;
+    padding-left: 35px;
+    width: 50vh;
+    justify-content: center;
+    text-align: left;
+}
+
+nav { 
+    background-color: #435e46;
+    display: flex;
+    justify-content: left;
+}
+
+
+.fullName {
+    font-size: medium;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.linkedlogo {
+  
+    height: auto;
+}
+
+.linkedlogo:hover {
+    background-color: #E9C874;
+}
+
+h1 {
+    font-size: xx-large;
+    animation-duration: 1s;
+    animation-iteration-count: 3;
+    display: inline-block;
     
+}
+
+h2 {
+    font-size: medium;
+}
+
+h1 {
+    animation-name: wave;
+}
+
+h3 {
+    text-align: left;
+    font-family: 'Work Sans', sans-serif;
+    color: aliceblue;
+    padding-left: 50px;
+    letter-spacing: 2px;
+    font-size: larger;
 }
 
 hr {
-    border-style: dashed;
-    border-color: #BEADFA;
-    border-width: 2px;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
-.example img {
-    border-radius: 10%;
-}
-
-
-.example p {
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
+dt {
+    color: aliceblue;
     font-family: 'Work Sans', sans-serif;
-    
+    margin-bottom: 10px;
+
 }
 
-ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+/*@keyframes wave {
+    0%, 40%, 100% {
+        transform: translateY(0);
+    }
+    20% {
+        transform: translateY(-70px);
+    }
+} */
+
+
+.linky a {
+    font-family: 'Work Sans', sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    color: #E9C874;
+}
+
+.linky a:hover {
+    color: white;
+}
+
+.tm {
+    font-family: 'Work Sans', sans-serif;
+    text-decoration: none;
+    color: aliceblue;
+    padding-bottom: 10px;
+}
+
+.goBack {
+    text-decoration: none;
+    color: #F3CA52;
+}
+
+.goBack:hover {
+    color:bisque;
 }
 
 .card {
-    box-shadow: 0 4px 8 px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-
-    padding: 10px;
-
-    border-radius: 10px;
-
-    /*width: 85%;*/
-    height: 350px;
-
-    background-color:#D3CEDF;
-
-    padding: 40px 20px;
-    text-align: center;
-    align-items: center;
-}
-
-.card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.langText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.leadText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.leadText dt{
-    font-size: 20px;
-    font-weight: bold;
-    align-items: flex-start;
-    
-}
-
-.leadText dd{
-    flex-wrap: nowrap;
-    margin-right: 40px;
-    
-}
-
-.skillText{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.skillText dd{
-    display: flex;
-    flex-grow: 15px;
-    margin-right: 40px;
-    
-}
-
-label {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-
-}
-
-.three-col {
-    position: relative;
-    display:grid;
-    
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: center;
-
-    margin: 50px 50px 30px 50px;
-
-    place-items: center;
-    margin: 0 auto;
-    height: 100%;
-    grid-gap: 50px;
-}
-
-.one-col {
-    display: flex;
-    justify-content: center;
-    align-self: center;
-    
-}
-
-.example h3 {
-    font-family: 'Handjet', cursive;
-    font-family: 'Noto Sans Mahajani', sans-serif;
     font-family: 'Work Sans', sans-serif;
-
+    color: aliceblue;
+    letter-spacing: 2px;
 }
 
+input {
+    margin-bottom: 10px;
+}
 
-.example h2 {
-    margin: 0px;
-    font-family: 'Handjet', cursive;
-    font-size: 50px;
-    /*font-family: 'Noto Sans Mahajani', sans-serif;*/
-    color:#424874
+.form-submit {
+    margin-top: 10px;
+}
+
+dt {
+    text-align: left;
+    margin-left: 75px;
+}
+
+dd {
+    text-align: left;
+    margin-left: 75px;
+    margin-bottom: 16px;
+}
+
+.linkedIn {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color:bisque;
+}
+
+.gitHub {
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 2px;
+    text-decoration: none;
+    font-weight: bold;
+    color: bisque;
+}
+
+.separator {
+    color: aliceblue;
+    font-size: large;
 }
