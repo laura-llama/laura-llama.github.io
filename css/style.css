@@ -1,207 +1,228 @@
-h1 {
-    font-size: xx-large;
-    font-family: 'Work Sans', sans-serif;
+body {
+    /* background-color: #607a6362; */
+    background-color: #4F6F52;
+    /* text-align: center; */
+
+    /* Double check size */
+    font-size: large; 
+
+    /* Google Font */
+    font-family:  'Work Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Universal Selector for text color */
+* {
+    /* color:#707070; */
     color: aliceblue;
-    letter-spacing: 2px;
-    
 }
 
-.boop h2.email {
+nav {
+    background-color: #89a18c;
+    top: 0;
+    right:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav-link {
+    padding: 2%;
+    text-align: center;
+    text-decoration: none;
+    color: antiquewhite;
+
+}
+
+.nav-link:hover {
+    color: rgb(116, 91, 60);
+}
+
+.nav-text {
+    color: rgb(231, 231, 231);
+    padding: 2%;
+}
+
+.email {
     letter-spacing: 1.5px;
-}
-
-.example {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; 
-    padding: 10px; 
-
-}
-
-.example .aboutMe {
-    text-align: left;
-    padding-left: 20%;
-    letter-spacing: 2px;
-    font-size: larger;
-}
-
-.paragraph {
-    margin-left: 75px;
     font-size: large;
+    margin: 1% 0% 0% 0%;
 }
 
-.example .headshot {
-    margin-right: 15%;
-    margin-left: 3%;
+.socials a {
+    color: bisque;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.socials a:hover {
+    color: rgb(81, 60, 34);
+}
+
+header {
+    position: fixed;
+    right:0;
+
+    /* Stacking Context */
+    z-index: 1;
+}
+
+/* .intro {
+    color: #e6e6e6;
+    font-size: xx-large;
+    letter-spacing: 1px;
+    margin-top: 4%;
+    margin-bottom: 0%;
+} */
+
+h2 {
+    margin-left: 1%;
+    /* color:#5c5b5b; */
+    color: aliceblue;
+}
+
+h1 {
+    margin-left: 1%;
+}
+
+
+.intro-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    flex-direction: column;
+}
+
+.intro1 {
+    font-size: xx-large;
+    margin: 0%;
+    /* text-align: right;
+    margin-left: 1%; */
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between links */
+    margin-top: 10px; /* Add some spacing above the links */
+}
+
+.aboutME {
+    margin: 0%;
+    text-align: left;
+}
+
+.aboutME p {
+    margin: 0 8%;
+}
+
+dt {
+    margin: 0 6%;
+}
+
+dd {
+    padding: 5px;
+}
+
+.wave {
+    /* margin-left: 3%; */
+
+    /* Animation */
+    animation-name: wave;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Animation */
+@keyframes wave {
+    /* 0% {transform: translateY(0);}
+    20% {transform: translateY(0);}
+    40% {transform: translateY(-30px);}
+    60% {transform: translateY(0);}
+    80% {transform: translateY(-15);}
+    100% {transform: translateY(0);} */
+
+    0% {transform: translateX(0);}
+    20% {transform: translateX(0);}
+    40% {transform: translate3D(-25px, 25px, 25px)}
+    /* 40% {transform: translateX(-30px);} */
+    /* 60% {transform: translateX(0);} */
+    80% {transform: translate3D(25px, -25px, 0)}
+    100% {transform: translateX(0);}
+
+    /* 50% {
+        transform: translate3D(25px, -25px, 0);
+      } */
+
+}
+
+.headshot {
+    /* clip-path: circle(); */
+    margin-bottom: 0%;
+    /* margin-left: 12%; */
+    margin-top: 5%;
     border-radius: 5%;
-    width: 20%;
-    transition: transform 0.3 ease;
+}
+
+.intro-container {
+    display: flex;
+    align-items: center;
 }
 
 .headshot:hover {
     transform: translateY(-5px);
 }
 
+/* Project Cards */
 
-h2 {
-    font-family:  'Work Sans', sans-serif;
-    color: aliceblue;
+.projectCont {
+    align-items: center;
 }
 
-body {
-    background-color: #435e46;
-    text-align: center;
-    margin: 0;
-}
 
-p {
-    font-family:  'Work Sans', sans-serif;
-    color: aliceblue;
-    padding-left: 35px;
-    width: 50vh;
-    justify-content: center;
-    text-align: left;
-}
-
-nav { 
-    background-color: #435e46;
+.column {
     display: flex;
-    justify-content: left;
+    align-items: center;
+    /* margin: 0 auto; */
+    float: left;
+    width: 90%;
+    padding: 0 10px;
+
+    overflow:auto ;
 }
 
-
-.fullName {
-    font-size: medium;
-    font-weight: bold;
-    letter-spacing: 2px;
-}
-
-.linkedlogo {
-  
-    height: auto;
-}
-
-.linkedlogo:hover {
-    background-color: #E9C874;
-}
-
-h1 {
-    font-size: xx-large;
-    animation-duration: 1s;
-    animation-iteration-count: 3;
-    display: inline-block;
+.row {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
     
+    overflow-x: auto;
 }
 
-h2 {
-    font-size: medium;
+.proj {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    overflow: wrap;
+
+    margin-right: 1%;
+    border-radius: 2%;
 }
 
-h1 {
-    animation-name: wave;
+.proj:hover {
+    transform: translateY(-5px);
+    z-index: 0;
 }
 
-h3 {
-    text-align: left;
-    font-family: 'Work Sans', sans-serif;
-    color: aliceblue;
-    padding-left: 50px;
-    letter-spacing: 2px;
-    font-size: larger;
+#projects .proj p {
+    color:#707070;
 }
 
-hr {
-    margin-top: 40px;
-    margin-bottom: 40px;
-}
-
-dt {
-    color: aliceblue;
-    font-family: 'Work Sans', sans-serif;
-    margin-bottom: 10px;
-
-}
-
-/*@keyframes wave {
-    0%, 40%, 100% {
-        transform: translateY(0);
-    }
-    20% {
-        transform: translateY(-70px);
-    }
-} */
-
-
-.linky a {
-    font-family: 'Work Sans', sans-serif;
-    color: white;
-    text-decoration: none;
-    padding: 15px;
-    color: #E9C874;
-}
-
-.linky a:hover {
-    color: white;
-}
-
-.tm {
-    font-family: 'Work Sans', sans-serif;
-    text-decoration: none;
-    color: aliceblue;
-    padding-bottom: 10px;
-}
-
-.goBack {
-    text-decoration: none;
-    color: #F3CA52;
-}
-
-.goBack:hover {
-    color:bisque;
-}
-
-.card {
-    font-family: 'Work Sans', sans-serif;
-    color: aliceblue;
-    letter-spacing: 2px;
-}
-
-input {
-    margin-bottom: 10px;
-}
-
-.form-submit {
-    margin-top: 10px;
-}
-
-dt {
-    text-align: left;
-    margin-left: 75px;
-}
-
-dd {
-    text-align: left;
-    margin-left: 75px;
-    margin-bottom: 16px;
-}
-
-.linkedIn {
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    color:bisque;
-}
-
-.gitHub {
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: 2px;
-    text-decoration: none;
-    font-weight: bold;
-    color: bisque;
-}
-
-.separator {
-    color: aliceblue;
-    font-size: large;
+#projects .proj h2 {
+    color:#707070;
 }
